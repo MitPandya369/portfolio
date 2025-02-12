@@ -1,14 +1,17 @@
-import { useEffect, useRef } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 
-const RevealOnScroll = ({ children }) => {
+const RevealOnScroll = ({ children }: { children: ReactNode }) => {
   const ref = useRef(null);
 
   useEffect(() => {
     const observable = new IntersectionObserver(
-      (entry) => {
-        console.log("🚀 ~ observable ~ entry:", entry);
+      (entries) => {
+        console.log("🚀 ~ observable ~ entries:", entries);
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("visible", entry.isIntersecting);
+        });
         // @ts-ignore
-        if (entry[0].isIntersecting) {
+        if (entries[0].isIntersecting) {
           // @ts-ignore
           ref.current.classList.add("visible");
         }

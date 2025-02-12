@@ -19,7 +19,7 @@ const About = () => {
               creating innovative solutions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 hover:translate-y-1 transition-all">
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.frontend.map((skill, index) => (
@@ -33,7 +33,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="rounded-xl p-6 hover:translate-y-1 transition-all">
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.backend.map((skill, index) => (
@@ -49,7 +49,7 @@ const About = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">
+            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">Education 📚</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
@@ -66,12 +66,12 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">
+            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">Work Experience 💼</h3>
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h4 className="font-semibold">
-                    Software Enginner at Gateway Group Of Componies (Dec 2022 -
+                    Software Enginner at Gateway Group Of Companies (Dec 2022 -
                     Present)
                   </h4>
                   <p>Develope and maintain the MERN stack applications</p>
@@ -79,7 +79,7 @@ const About = () => {
 
                 <div>
                   <h4 className="font-semibold">
-                    Internship at Gateway Group Of Componies (Dec 2022 - Aug
+                    Internship at Gateway Group Of Companies (Dec 2022 - Aug
                     2023)
                   </h4>
                   <p>
